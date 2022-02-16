@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    
+    <h:head>
+        <title>Login Web</title>
+    </h:head>
+    <h:body>
+      <h1><h:outputText id="bemVindo" value="Bem vindo(a) ao cadastro de pessoas."/></h1>
+      <h3>Vamos Fazer login ?</h3>
+      <h:panelGrid id="gridLoginSenha" columns="1">
+               
+        <form name="login_form" action="LoginController" method="POST">
+
+<!--            <label for="username">Usuario:</label>-->
+            <h:outputText id="username" value="Usuario:"/>
+            <input type="text" name="username" id="username"/>
+            
+
+
+            <h:outputText id="senhaText" value="Senha:"/>
+            <input type="text" name="password" id="password"/>
+
+            <input type="submit" value="Entrar"/>
+        </form>
+      </h:panelGrid>
+    </h:body>
+</html>
+
